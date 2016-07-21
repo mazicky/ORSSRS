@@ -15,6 +15,12 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         super.viewDidLoad()
         // Do any additional setup after loading the view from its nib.
     }
+    override func viewWillAppear(animated: Bool)
+    {
+        var currentSize: CGSize = self.preferredContentSize
+        currentSize.height = 35.0
+        self.preferredContentSize = currentSize
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
