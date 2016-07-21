@@ -30,5 +30,12 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 
         completionHandler(NCUpdateResult.NewData)
     }
-    
+    @IBAction func onORSClicked(sender: AnyObject) {
+    }
+    @IBAction func onSRSClicked(sender: AnyObject) {
+    }
+    @IBAction func onCheckinClicked(sender: AnyObject) {
+    }
+    @IBAction func onRetroClicked(sender: AnyObject) {
+    }
 }
