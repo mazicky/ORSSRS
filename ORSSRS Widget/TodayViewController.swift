@@ -31,11 +31,15 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         completionHandler(NCUpdateResult.NewData)
     }
     @IBAction func onORSClicked(sender: AnyObject) {
+        extensionContext?.openURL(NSURL(string: "http://j.mp/orsac2")!, completionHandler: nil)
     }
     @IBAction func onSRSClicked(sender: AnyObject) {
+        extensionContext?.openURL(NSURL(string: "http://j.mp/srsac2")!, completionHandler: nil)
     }
     @IBAction func onCheckinClicked(sender: AnyObject) {
+        extensionContext?.openURL(NSURL(string: "https://docs.google.com/a/flyingloft.com/forms/d/1QZ9e1THiz4MBMzkX-a57P0KG72AccyJxtivr504Ho44/viewform?c=0&w=1")!, completionHandler: nil)
     }
     @IBAction func onRetroClicked(sender: AnyObject) {
+        extensionContext?.openURL(NSURL(string: "fb://profile")!, completionHandler: nil)
     }
 }
