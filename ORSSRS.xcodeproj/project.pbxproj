@@ -14,6 +14,10 @@
 		685634421D40D5AE00DB70B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 685634401D40D5AE00DB70B0 /* LaunchScreen.storyboard */; };
 		6856344D1D40D5AE00DB70B0 /* ORSSRSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6856344C1D40D5AE00DB70B0 /* ORSSRSTests.swift */; };
 		685634581D40D5AE00DB70B0 /* ORSSRSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685634571D40D5AE00DB70B0 /* ORSSRSUITests.swift */; };
+		6856346C1D40D69500DB70B0 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6856346B1D40D69500DB70B0 /* NotificationCenter.framework */; };
+		6856346F1D40D69500DB70B0 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6856346E1D40D69500DB70B0 /* TodayViewController.swift */; };
+		685634721D40D69500DB70B0 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 685634701D40D69500DB70B0 /* MainInterface.storyboard */; };
+		685634761D40D69500DB70B0 /* ORSSRS Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 685634691D40D69500DB70B0 /* ORSSRS Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +35,28 @@
 			remoteGlobalIDString = 685634331D40D5AE00DB70B0;
 			remoteInfo = ORSSRS;
 		};
+		685634741D40D69500DB70B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6856342C1D40D5AE00DB70B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 685634681D40D69500DB70B0;
+			remoteInfo = "ORSSRS Widget";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6856347A1D40D69500DB70B0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				685634761D40D69500DB70B0 /* ORSSRS Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		685634341D40D5AE00DB70B0 /* ORSSRS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ORSSRS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +72,11 @@
 		685634531D40D5AE00DB70B0 /* ORSSRSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ORSSRSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		685634571D40D5AE00DB70B0 /* ORSSRSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ORSSRSUITests.swift; sourceTree = "<group>"; };
 		685634591D40D5AE00DB70B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		685634691D40D69500DB70B0 /* ORSSRS Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ORSSRS Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6856346B1D40D69500DB70B0 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		6856346E1D40D69500DB70B0 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		685634711D40D69500DB70B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		685634731D40D69500DB70B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +101,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		685634661D40D69500DB70B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6856346C1D40D69500DB70B0 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +118,8 @@
 				685634361D40D5AE00DB70B0 /* ORSSRS */,
 				6856344B1D40D5AE00DB70B0 /* ORSSRSTests */,
 				685634561D40D5AE00DB70B0 /* ORSSRSUITests */,
+				6856346D1D40D69500DB70B0 /* ORSSRS Widget */,
+				6856346A1D40D69500DB70B0 /* Frameworks */,
 				685634351D40D5AE00DB70B0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +130,7 @@
 				685634341D40D5AE00DB70B0 /* ORSSRS.app */,
 				685634481D40D5AE00DB70B0 /* ORSSRSTests.xctest */,
 				685634531D40D5AE00DB70B0 /* ORSSRSUITests.xctest */,
+				685634691D40D69500DB70B0 /* ORSSRS Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +166,24 @@
 			path = ORSSRSUITests;
 			sourceTree = "<group>";
 		};
+		6856346A1D40D69500DB70B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6856346B1D40D69500DB70B0 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6856346D1D40D69500DB70B0 /* ORSSRS Widget */ = {
+			isa = PBXGroup;
+			children = (
+				6856346E1D40D69500DB70B0 /* TodayViewController.swift */,
+				685634701D40D69500DB70B0 /* MainInterface.storyboard */,
+				685634731D40D69500DB70B0 /* Info.plist */,
+			);
+			path = "ORSSRS Widget";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +194,12 @@
 				685634301D40D5AE00DB70B0 /* Sources */,
 				685634311D40D5AE00DB70B0 /* Frameworks */,
 				685634321D40D5AE00DB70B0 /* Resources */,
+				6856347A1D40D69500DB70B0 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				685634751D40D69500DB70B0 /* PBXTargetDependency */,
 			);
 			name = ORSSRS;
 			productName = ORSSRS;
@@ -181,6 +242,23 @@
 			productReference = 685634531D40D5AE00DB70B0 /* ORSSRSUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		685634681D40D69500DB70B0 /* ORSSRS Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 685634771D40D69500DB70B0 /* Build configuration list for PBXNativeTarget "ORSSRS Widget" */;
+			buildPhases = (
+				685634651D40D69500DB70B0 /* Sources */,
+				685634661D40D69500DB70B0 /* Frameworks */,
+				685634671D40D69500DB70B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ORSSRS Widget";
+			productName = "ORSSRS Widget";
+			productReference = 685634691D40D69500DB70B0 /* ORSSRS Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,6 +280,9 @@
 						CreatedOnToolsVersion = 7.3.1;
 						TestTargetID = 685634331D40D5AE00DB70B0;
 					};
+					685634681D40D69500DB70B0 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 				};
 			};
 			buildConfigurationList = 6856342F1D40D5AE00DB70B0 /* Build configuration list for PBXProject "ORSSRS" */;
@@ -220,6 +301,7 @@
 				685634331D40D5AE00DB70B0 /* ORSSRS */,
 				685634471D40D5AE00DB70B0 /* ORSSRSTests */,
 				685634521D40D5AE00DB70B0 /* ORSSRSUITests */,
+				685634681D40D69500DB70B0 /* ORSSRS Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -246,6 +328,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		685634671D40D69500DB70B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				685634721D40D69500DB70B0 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +367,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		685634651D40D69500DB70B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6856346F1D40D69500DB70B0 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,6 +387,11 @@
 			isa = PBXTargetDependency;
 			target = 685634331D40D5AE00DB70B0 /* ORSSRS */;
 			targetProxy = 685634541D40D5AE00DB70B0 /* PBXContainerItemProxy */;
+		};
+		685634751D40D69500DB70B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 685634681D40D69500DB70B0 /* ORSSRS Widget */;
+			targetProxy = 685634741D40D69500DB70B0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -307,6 +410,14 @@
 				685634411D40D5AE00DB70B0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		685634701D40D69500DB70B0 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				685634711D40D69500DB70B0 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -401,6 +512,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ORSSRS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.maz.it.ORSSRS;
@@ -412,6 +524,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ORSSRS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.maz.it.ORSSRS;
@@ -465,6 +578,28 @@
 			};
 			name = Release;
 		};
+		685634781D40D69500DB70B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "ORSSRS Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maz.it.ORSSRS.ORSSRS-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		685634791D40D69500DB70B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "ORSSRS Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maz.it.ORSSRS.ORSSRS-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -498,6 +633,14 @@
 			buildConfigurations = (
 				685634631D40D5AE00DB70B0 /* Debug */,
 				685634641D40D5AE00DB70B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		685634771D40D69500DB70B0 /* Build configuration list for PBXNativeTarget "ORSSRS Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				685634781D40D69500DB70B0 /* Debug */,
+				685634791D40D69500DB70B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

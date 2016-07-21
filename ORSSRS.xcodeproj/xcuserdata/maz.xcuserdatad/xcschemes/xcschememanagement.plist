@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ORSSRS Widget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>ORSSRS.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>685634521D40D5AE00DB70B0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>685634681D40D69500DB70B0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
